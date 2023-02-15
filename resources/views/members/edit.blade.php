@@ -31,7 +31,7 @@
         <input type="text" name="twitch" id="twitch" value="{{$member->twitch}}">
         <br>
 
-        <input type="submit" value="Guardar">
+        <input class="bg-geen" type="submit" value="Guardar">
     </form>
 
 

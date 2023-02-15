@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Requests\EventRequest;
+
 use App\Models\Event;
 
 class EventController extends Controller
@@ -32,7 +34,7 @@ class EventController extends Controller
         return view('events.edit', compact('event'));
     }
 
-    public function update(Request $request, Event $event)
+    public function update(EventRequest $request, Event $event)
     {
         $request->validate([
             'name' => 'required',
@@ -57,7 +59,7 @@ class EventController extends Controller
     }
 
     
-    public function store(Request $request)
+    public function store(EventRequest $request)
     {
         $request->validate([
             'name' => 'required',

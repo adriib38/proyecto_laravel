@@ -52,6 +52,11 @@ class MessageController extends Controller
         $message->text = $request->text;
         $message->save();
 
+        //Obtiene el usuario logueado
+        $user = auth()->user();
+        //Relaciona el mensaje con el usuario
+        $user->messages()->syncWithoutDetaching($message);
+
         //Redirigir
         return redirect()->route('messages.create');
     }

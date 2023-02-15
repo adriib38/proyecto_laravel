@@ -39,8 +39,7 @@
         <input type="checkbox" name="visible" id="visible" {{$event->visible==1 ? 'checked' : ''}}>
         <br>
 
-
-        <input type="submit" value="Guardar">
+        <input class="bg-green" type="submit" value="Guardar">
     </form>
 
 

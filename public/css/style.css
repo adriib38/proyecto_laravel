@@ -30,6 +30,7 @@ nav a:hover {
 #contenido {
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 400px;
 }
 
 #form-login,
@@ -104,7 +105,7 @@ input[type=submit] {
 }
 
 footer {
-    background-color: rgba(255, 239, 166, 0.676);
+    background-color: rgb(255, 241, 181);
     padding: 20px;
     text-align: center;
     font-weight: 700;
