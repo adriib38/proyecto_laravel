@@ -27,7 +27,7 @@
         <br>
         <label for="visible">Visible:</label>
         <input type="checkbox" name="visible" id="visible">
-        <button type="submit">Crear evento</button>
+        <button class="bg-green" type="submit">Crear evento</button>
     </form>
 
 @endsection

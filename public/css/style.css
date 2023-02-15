@@ -46,6 +46,20 @@ nav a:hover {
     width: 70%;
 }
 
+.event-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgb(102, 102, 102);
+    align-items: center;
+}
+
+.event-options a {
+    color: white;
+}
+
 #event-assistance {
     padding: 30px;
     background-color: rgb(204, 204, 204);;
@@ -64,15 +78,29 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.event {
+article.event {
     background-color: rgb(204, 204, 204);
     padding: 20px;
     display: flex;
     flex-direction: column;
+    width: 600px;
     border-radius: 5px;
-    width: 70%;
+
     border: 2px solid rgb(10, 187, 78);
     margin-bottom: 10px;
+}
+
+.bg-green { background-color: rgb(10, 187, 78); }
+.bg-red { background-color: rgb(187, 10, 10); }
+
+
+button,
+input[type=submit] {
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 footer {

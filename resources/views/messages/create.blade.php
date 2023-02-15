@@ -17,7 +17,7 @@
         
         <br>
 
-        <button type="submit">Crear evento</button>
+        <button class="bg-green" type="submit">Enviar</button>
     </form>
 
     @if($errors->any())
